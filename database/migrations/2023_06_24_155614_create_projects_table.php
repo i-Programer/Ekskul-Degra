@@ -13,9 +13,7 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('category');
-            $table->foreignId('author_id');
+            $table->text('author_name');
             $table->text('file');
             $table->timestamps();
         });

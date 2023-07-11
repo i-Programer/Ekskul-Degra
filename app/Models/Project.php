@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+    // protected $with = ['author'];
+
+    public function author(){
+        return $this->belongsTo(Author::class);
+    }
 }

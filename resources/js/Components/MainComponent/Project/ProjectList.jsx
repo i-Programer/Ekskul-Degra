@@ -1,77 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
 
-const ProjectList = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-        ],
-        className: "flex flex-row justify-between items-center mb-10",
-        prevArrow: <></>, // Custom component that doesn't render anything
-        nextArrow: <></>,
+const ProjectList = ({ allProject }) => {
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const openModal = (project) => {
+        setSelectedProject(project);
+        document.body.style.overflow = "hidden"; // Disable scrolling
     };
+
+    const closeModal = () => {
+        setSelectedProject(null);
+        document.body.style.overflow = "auto"; // Enable scrolling
+    };
+
+    const projectList = [
+        {
+            id: 1,
+            imageUrl: "https://example.com/image1.jpg",
+            title: "Project 1",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+            id: 2,
+            imageUrl: "https://example.com/image2.jpg",
+            title: "Project 2",
+            description:
+                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        },
+        // Add more projects here
+    ];
+
     return (
         <>
-            <div className="flex flex-row justify-between items-center px-5 flex-wrap">
-                <span className="text-4xl font-bold">Project of Us</span>
-
-                {/* <div className="flex flex-row justify-center items-center">
-                    <form className="flex items-center mb-4">
-                        <select className="mr-2 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <option value="">All</option>
-                            <option value="type1">Rune</option>
-                        </select>
-                    </form>
-                </div> */}
+            <div className="flex flex-row justify-between items-center px-5 mb-5 ">
+                <span className="text-4xl font-bold text-slate-400">
+                    Project of Us
+                </span>
             </div>
 
-            <Slider {...settings} edgeFriction={0.1}>
-                <div className="h-full flex">
-                    <div className="h-full">
-                        <ProjectCard />
+            <div className="flex flex-row justify-center items-center flex-wrap gap-x-1 gap-y-4 mb-10">
+                {allProject.map((project) => (
+                    <div key={project.id} className="h-full flex">
+                        <div className="h-full">
+                            <ProjectCard
+                                file={project.file}
+                                authorName={project.author_name}
+                                onClick={() => openModal(project)}
+                            />
+                        </div>
                     </div>
-                </div>
-                <div className="h-full flex">
-                    <div className="h-full">
-                        <ProjectCard />
-                    </div>
-                </div>
-                <div className="h-full flex">
-                    <div className="h-full">
-                        <ProjectCard />
-                    </div>
-                </div>
-                <div className="h-full flex">
-                    <div className="h-full">
-                        <ProjectCard />
-                    </div>
-                </div>
-            </Slider>
+                ))}
+            </div>
+
+            {selectedProject && (
+                <ProjectModal
+                    isOpen={true}
+                    file={selectedProject.file}
+                    authorName={selectedProject.author_name}
+                    onClose={closeModal}
+                />
+            )}
         </>
     );
 };

@@ -11,7 +11,8 @@ use App\Models\Author;
 class HomeController extends Controller
 {
     public function index(){
-        // dd('work');
-        return Inertia::render('Homepage');
+        $allProject = Project::all();
+        
+        return Inertia::render('Homepage', compact('allProject'));
     }
 }

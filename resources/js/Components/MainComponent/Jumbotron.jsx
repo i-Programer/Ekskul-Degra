@@ -22,21 +22,14 @@ const Jumbotron = () => {
             <Slider {...settings}>
                 <div className="w-100 h-100 flex justify-center items-center w-full">
                     <img
-                        src="/assets/img/utility/DummySlider1.jpeg"
+                        src="/assets/img/utility/WelcomeSlider.jpg"
                         alt=""
                         className="w-full"
                     />
                 </div>
                 <div className="w-100 h-100 flex justify-center items-center w-full">
                     <img
-                        src="/assets/img/utility/DummySlider1.jpeg"
-                        alt=""
-                        className="w-full"
-                    />
-                </div>
-                <div className="w-100 h-100 flex justify-center items-center w-full">
-                    <img
-                        src="/assets/img/utility/DummySlider1.jpeg"
+                        src="/assets/img/utility/PromoteSlider.jpg"
                         alt=""
                         className="w-full"
                     />

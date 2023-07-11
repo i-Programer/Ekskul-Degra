@@ -15,4 +15,10 @@ class ProjectController extends Controller
 
         return Inertia::render('Project/ProjectDetails', compact('projectDetails'));
     }
+
+    public function getAuthor($authorId){
+        $authorDetails = Author::find($authorId);
+
+        return response()->json($authorDetails);
+    }
 }

@@ -24,6 +24,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::group(['prefix' => 'project'], function () {
    Route::get('/', [ProjectController::class, 'allProject'])->name('project.allProject');
    Route::get('/details/{projectId}', [ProjectController::class, 'detailsProject'])->name('project.projectDetails');
+
+   Route::get('/getAuthor/{authorId}', [ProjectController::class, 'getAuthor'])->name('project.getAuthor');
 });
 
 Route::get('/dashboard', function () {

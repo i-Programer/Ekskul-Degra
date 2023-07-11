@@ -15,6 +15,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'yellowStuda': "#E3C27D",
+                'yeliteStuda': "#EFE3D5",
+                'redStuda': "#D89A8F",
+                'rediteStuda': "#EDDFDD"
+            }
         },
     },
 

@@ -1,28 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const ProjectCard = () => {
+const ProjectCard = ({ file, authorName, onClick }) => {
+    // Extract the first name
+    let authorFile = authorName.split("<br/>")[0];
+
+    // If the <br/> tag is not present, extract the name without modification
+    if (authorFile === authorName) {
+        authorFile = authorName;
+    } else {
+        // Trim any whitespace
+        authorFile = authorFile.trim();
+    }
+
+    // Output the first name
+    console.log(authorFile);
     return (
         <>
-            <a href="#" className="h-full flex">
-                <div className="flex flex-col bg-white rounded-lg shadow-md h-full mx-3 p-3 my-3 flex-grow">
-                    <img
-                        src="/assets/img/project/Project5.jpeg"
-                        alt=""
-                        className="w-full h-full object-cover mb-4 rounded-md"
-                    />
-                    <h3 className="text-lg font-bold mx-auto">
-                        Poster Hari Kemerdekaan
-                    </h3>
-                    <div className="flex flex-col items-center justify-between">
-                        <span className="text-gray-700 font-bold text-sm">
-                            Author: <span className="font-bold">Raihan Shaumir</span>
-                        </span>
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
-                            Details
-                        </button>
-                    </div>
-                </div>
-            </a>
+            <div
+                className="w-52 h-52 border border-gray-300 overflow-hidden cursor-pointer bg-redStuda flex justify-center items-center"
+                onClick={onClick}
+            >
+                <img
+                    className="w-full object-cover"
+                    src={`/assets/img/project/${authorFile}/${file}`}
+                    alt="Post"
+                />
+            </div>
         </>
     );
 };
