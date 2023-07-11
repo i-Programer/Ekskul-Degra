@@ -17,7 +17,7 @@ const ProjectCard = ({ file, authorName, onClick }) => {
     return (
         <>
             <div
-                className="lg:w-52 w-32 lg:h-52 h-32 border border-gray-300 overflow-hidden cursor-pointer bg-redStuda flex justify-center items-center"
+                className="lg:w-52 w-24 lg:h-52 h-24 border border-gray-300 overflow-hidden cursor-pointer bg-redStuda flex justify-center items-center"
                 onClick={onClick}
             >
                 <img

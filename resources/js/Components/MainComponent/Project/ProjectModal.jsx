@@ -24,18 +24,18 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
                     className="fixed inset-0 bg-rediteStuda opacity-50"
                     onClick={onClose}
                 ></div>
-                <div className="bg-yeliteStuda rounded-lg p-4 z-[100] relative border-black border-solid border-2 w-[60%]">
+                <div className="bg-yeliteStuda rounded-lg p-4 z-[100] relative border-black border-solid border-2 w-[90%]">
                     <button
                         className="text-slate-400 text-lg font-bold absolute right-3 top-3"
                         onClick={onClose}
                     >
                         <AiOutlineClose />
                     </button>
-                    <div className="flex md:flex-row flex-col justify-center items-start gap-x-6 gap-y-4">
+                    <div className="flex md:flex-row flex-col md:justify-center justify-center md:items-start items-center gap-x-6 gap-y-4">
                         <img
                             src={`/assets/img/project/${autorFile}/${file}`}
                             alt={autorFile}
-                            className="w-[70%]"
+                            className="w-[100%]"
                         />
                         <div className="flex flex-col justify-center items-start text-slate-400 mt-16">
                             <span className="font-bold lg:text-2xl text-xl">

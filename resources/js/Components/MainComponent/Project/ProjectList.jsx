@@ -44,7 +44,7 @@ const ProjectList = ({ allProject }) => {
                 </span>
             </div>
 
-            <div className="flex flex-row justify-center items-center flex-wrap gap-x-1 gap-y-4 mb-10">
+            <div className="flex flex-row justify-center items-center flex-wrap md:gap-x-1 md:gap-y-4 gap-y-2 mb-10">
                 {allProject.map((project) => (
                     <div key={project.id} className="h-full flex">
                         <div className="h-full">
