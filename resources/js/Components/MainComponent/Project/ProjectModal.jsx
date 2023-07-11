@@ -7,7 +7,7 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
     }
 
     // Extract the first name
-    let autorFile = authorName.split("<br/>")[0];
+    let autorFile = authorName.split(",")[0];
 
     // If the <br/> tag is not present, extract the name without modification
     if (autorFile === authorName) {
