@@ -35,7 +35,7 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
                         <img
                             src={`/assets/img/project/${autorFile}/${file}`}
                             alt={autorFile}
-                            className="w-[100%]"
+                            className="w-[80%]"
                         />
                         <div className="flex flex-col justify-center items-start text-slate-400 mt-16">
                             <span className="font-bold lg:text-2xl text-xl">
