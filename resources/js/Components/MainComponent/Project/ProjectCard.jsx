@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const ProjectCard = ({ file, authorName, onClick }) => {
     // Extract the first name
-    let authorFile = authorName.split("<br/>")[0];
+    let authorFile = authorName.split(",")[0];
 
     // If the <br/> tag is not present, extract the name without modification
     if (authorFile === authorName) {
@@ -17,7 +17,7 @@ const ProjectCard = ({ file, authorName, onClick }) => {
     return (
         <>
             <div
-                className="w-52 h-52 border border-gray-300 overflow-hidden cursor-pointer bg-redStuda flex justify-center items-center"
+                className="lg:w-52 w-32 lg:h-52 h-32 border border-gray-300 overflow-hidden cursor-pointer bg-redStuda flex justify-center items-center"
                 onClick={onClick}
             >
                 <img

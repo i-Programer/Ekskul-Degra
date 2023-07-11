@@ -31,17 +31,17 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
                     >
                         <AiOutlineClose />
                     </button>
-                    <div className="flex flex-row justify-center items-start gap-x-6 gap-y-4">
+                    <div className="flex md:flex-row flex-col justify-center items-start gap-x-6 gap-y-4">
                         <img
                             src={`/assets/img/project/${autorFile}/${file}`}
                             alt={autorFile}
-                            className="w-[40%]"
+                            className="w-[70%]"
                         />
                         <div className="flex flex-col justify-center items-start text-slate-400 mt-16">
-                            <span className="font-bold lg:text-2xl">
+                            <span className="font-bold lg:text-2xl text-xl">
                                 Author:
                             </span>
-                            <span className="font-bold lg:text-4xl">
+                            <span className="font-bold lg:text-4xl text-3xl">
                                 {authorName}
                             </span>
                         </div>
