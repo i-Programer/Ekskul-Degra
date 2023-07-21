@@ -24,7 +24,7 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
                     className="fixed inset-0 bg-rediteStuda opacity-50"
                     onClick={onClose}
                 ></div>
-                <div className="bg-yeliteStuda rounded-lg p-4 z-[100] relative border-black border-solid border-2 w-[90%]">
+                <div className="bg-yeliteStuda rounded-lg p-4 z-[100] relative border-black border-solid border-2 sm:w-[50%] w-[90%]">
                     <button
                         className="text-slate-400 text-lg font-bold absolute right-3 top-3"
                         onClick={onClose}
@@ -35,13 +35,13 @@ const ProjectModal = ({ isOpen, file, authorName, onClose }) => {
                         <img
                             src={`/assets/img/project/${autorFile}/${file}`}
                             alt={autorFile}
-                            className="w-[80%]"
+                            className="sm:w-[50%] w-[80%]"
                         />
-                        <div className="flex flex-col justify-center items-start text-slate-400 mt-16">
-                            <span className="font-bold lg:text-2xl text-xl">
+                        <div className="flex flex-col justify-center items-start text-slate-400">
+                            <span className="font-bold lg:text-xl text-xl">
                                 Author:
                             </span>
-                            <span className="font-bold lg:text-4xl text-3xl">
+                            <span className="font-bold lg:text-2xl text-3xl">
                                 {authorName}
                             </span>
                         </div>

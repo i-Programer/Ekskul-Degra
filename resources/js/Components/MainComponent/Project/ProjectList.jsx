@@ -18,24 +18,6 @@ const ProjectList = ({ allProject }) => {
         document.body.style.overflow = "auto"; // Enable scrolling
     };
 
-    const projectList = [
-        {
-            id: 1,
-            imageUrl: "https://example.com/image1.jpg",
-            title: "Project 1",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-            id: 2,
-            imageUrl: "https://example.com/image2.jpg",
-            title: "Project 2",
-            description:
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        },
-        // Add more projects here
-    ];
-
     return (
         <>
             <div className="flex flex-row justify-between items-center px-5 mb-5 ">
