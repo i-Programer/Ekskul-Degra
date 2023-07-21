@@ -69,7 +69,7 @@ const ModeratorsList = () => {
 
     return (
         <>
-            <div className="flex justify-center items-center w-full">
+            <div className="flex justify-center items-center w-full mb-10">
                 <div className="flex flex-col justify-center w-full">
                     <div className="flex flex-row justify-between items-center px-5 mb-5 ">
                         <span className="text-4xl font-bold text-slate-400">

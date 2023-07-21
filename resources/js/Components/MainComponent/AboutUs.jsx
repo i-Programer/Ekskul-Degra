@@ -3,14 +3,14 @@ import React from "react";
 const AboutUs = () => {
     return (
         <>
-            <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-row justify-between items-center px-5 mb-5 ">
+            <div className="flex flex-col justify-center items-center mb-10">
+                <div className="flex flex-row justify-between items-center sm:px-5 px-2 mb-5 ">
                     <span className="sm:text-5xl text-4xl font-bold text-slate-400">
                         About Degra
                     </span>
                 </div>
 
-                <div className="flex justify-center items-center px-[20vw]">
+                <div className="flex justify-center items-center sm:px-[20vw] px-[5vw]">
                     <p className="text-slate-400 text-lg text-center">
                         Ekstrakurikuler Desain Grafis adalah salah satu kegiatan
                         di sekolah yang bertujuan untuk melatih siswa dalam

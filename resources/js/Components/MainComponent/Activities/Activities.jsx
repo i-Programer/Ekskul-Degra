@@ -10,9 +10,9 @@ const Activities = () => {
                 </span>
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center sm:px-0 px-3 mb-10">
                 <div className="flex flex-row justify-between items-center gap-x-3 gap-y-3">
-                    <div className="flex flex-col justify-ceter items-center gap-x-2 gap-y-4">
+                    <div className="flex flex-col justify-ceter items-center gap-x-2 gap-y-4 ">
                         <div className="p-3 rounded-md bg-white flex flex-col justify-center items-start sm:w-2/3">
                             <Collapsible
                                 trigger={

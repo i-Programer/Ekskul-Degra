@@ -59,7 +59,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <nav className="flex flex-wrap items-center justify-between px-16 bg-transparent py-3 z-[100] top-0 absolute w-full">
+            <nav className="flex flex-wrap items-center justify-between sm:px-16 bg-transparent py-3 z-[100] top-0 absolute w-full">
                 <div className="w-full px-1 mx-auto items-center justify-between flex flex-row">
                     <button
                         className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

@@ -3,7 +3,7 @@ import React from "react";
 const EventLists = () => {
     return (
         <>
-            <div className="flex flex-row justify-between items-center px-5 mb-5 ">
+            <div className="flex flex-row justify-between items-center px-5 mb-10 ">
                 <span className="text-4xl font-bold text-slate-400">
                    Event 
                 </span>
