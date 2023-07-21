@@ -23,7 +23,7 @@ const Activities = () => {
                                     </button>
                                 }
                             >
-                                <div className="p-4 bg-gray-100">
+                                <div className="p-4 bg-gray-100 mt-3">
                                     <ul className="list-disc list-inside space-y-2">
                                         <li>
                                             Prinsip-prinsip Desain Grafis: Anda
@@ -63,7 +63,7 @@ const Activities = () => {
                                     </button>
                                 }
                             >
-                                <div className="p-4 bg-gray-100">
+                                <div className="p-4 bg-gray-100 mt-3">
                                     <ul className="list-disc list-inside space-y-2">
                                         <li>
                                             Latihan Menggunakan Perangkat Lunak
@@ -109,7 +109,7 @@ const Activities = () => {
                                     </button>
                                 }
                             >
-                                <div className="p-4 bg-gray-100">
+                                <div className="p-4 bg-gray-100 mt-3">
                                     <ul className="list-disc list-inside space-y-2">
                                         <li>
                                             Keterampilan Desain Grafis: Peserta
