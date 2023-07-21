@@ -11,6 +11,44 @@ const ModeratorsList = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                },
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 325,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            // Add more breakpoints if needed
+        ],
         autoplaySpeed: 3000,
         className:
             "w-full mb-10 flex flex-row justify-center items-center gap-x-3 gap-y-4",
@@ -23,7 +61,7 @@ const ModeratorsList = () => {
         { name: "Khanza Latania Chaidir", role: "Wakil" },
         { name: "Reviana Mulyadi Putri", role: "Sekretaris" },
         { name: "Novianti Aulia", role: "Wakil Sekretaris" },
-        { name: "Ashof Zulkarnaen", role: "Bendahara & Web Developer" },
+        { name: "Ashof Zulkarnaen", role: "Bendahara" },
         { name: "Lanna Aisyah", role: "Wakil Bendahara" },
         { name: "Raihan Shaumir", role: "Humas" },
         { name: "Regina Agni Anindya", role: "Wakil Humas" },

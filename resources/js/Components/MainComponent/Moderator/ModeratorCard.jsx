@@ -15,7 +15,7 @@ const ModeratorCard = ({ name, role}) => {
                             />
                         </div>
                         <div className="text-center mt-4">
-                            <h3 className="text-xl font-semibold">
+                            <h3 className="sm:text-xl text-lg font-semibold">
                                 {name}
                             </h3>
                             <p className="text-gray-600">{role}</p>

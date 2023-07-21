@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
     return (
@@ -16,68 +17,22 @@ const Footer = () => {
                             <h4 className="text-xl mb-2">Follow Us</h4>
                             <div className="flex space-x-4">
                                 <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-white"
+                                    href="https://www.instagram.com/grafis_studa/"
+                                    className="text-gray-400 hover:text-white text-xl font-bold"
                                 >
-                                    <svg
-                                        className="w-6 h-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M22 2v20L12 16 2 22V2l10 6 10-6z" />
-                                    </svg>
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-white"
-                                >
-                                    <svg
-                                        className="w-6 h-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M22 2v20L12 16 2 22V2l10 6 10-6z" />
-                                    </svg>
-                                </a>
-                                <a
-                                    href="#"
-                                    className="text-gray-400 hover:text-white"
-                                >
-                                    <svg
-                                        className="w-6 h-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M22 2v20L12 16 2 22V2l10 6 10-6z" />
-                                    </svg>
+                                   <AiOutlineInstagram/>
                                 </a>
                             </div>
                         </div>
                         <div className="w-full lg:w-1/3">
                             <h4 className="text-xl mb-2">Contact</h4>
-                            <p className="text-sm">123 Main Street, City</p>
-                            <p className="text-sm">contact@example.com</p>
-                            <p className="text-sm">+1 123-456-7890</p>
+                            <p className="text-sm">Adima +62 859-3033-3429</p>
+                            <p className="text-sm">Khanza +62 851-6170-7073</p>
                         </div>
                     </div>
                     <div className="mt-4 text-center">
                         <p className="text-sm">
-                            &copy; 2023 Javakoding. All rights reserved.
+                            &copy; 2023 Redash. All rights reserved.
                         </p>
                     </div>
                 </div>
